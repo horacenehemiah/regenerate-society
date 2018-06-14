@@ -1,0 +1,6 @@
+framework module Pods_Regenerate_SocietyTests {
+  umbrella header "Pods-Regenerate SocietyTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

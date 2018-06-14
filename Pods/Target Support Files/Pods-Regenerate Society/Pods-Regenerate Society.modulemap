@@ -1,0 +1,6 @@
+framework module Pods_Regenerate_Society {
+  umbrella header "Pods-Regenerate Society-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,1013 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53BC71739222B114031F075A /* Pods_Regenerate_Society.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B890BDE6EC79A364357BE49 /* Pods_Regenerate_Society.framework */; };
+		5D0FDF102D1116C7AD1D7AB6 /* Pods_Regenerate_SocietyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27ADEE07316ED7995C323E2 /* Pods_Regenerate_SocietyUITests.framework */; };
+		84679CD020A903910002D865 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84679CCF20A903910002D865 /* GalleryViewController.swift */; };
+		84679CD420A907840002D865 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84679CD320A907840002D865 /* LaunchViewController.swift */; };
+		849701AA207DBCAA003D46A1 /* EventDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849701A9207DBCAA003D46A1 /* EventDetailTableViewCell.swift */; };
+		84DD411120704265000CD253 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DD411020704265000CD253 /* Twitter.framework */; };
+		84DD411420704394000CD253 /* Twitter.blank.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84DD411220704394000CD253 /* Twitter.blank.plist */; };
+		84DD411520704394000CD253 /* Twitter.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84DD411320704394000CD253 /* Twitter.plist */; };
+		84DD411B20704538000CD253 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DD411720704537000CD253 /* TwitterKit.framework */; };
+		84DD411D20704538000CD253 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DD411920704538000CD253 /* TwitterCore.framework */; };
+		84DD4124207045C0000CD253 /* TwitterShareExtensionUIResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84DD4122207045C0000CD253 /* TwitterShareExtensionUIResources.bundle */; };
+		84DD4125207045C0000CD253 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84DD4123207045C0000CD253 /* TwitterKitResources.bundle */; };
+		84DD412720704C4F000CD253 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD412620704C4F000CD253 /* HomeViewController.swift */; };
+		84DD412B20706DF7000CD253 /* RS3.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DD412820706DF7000CD253 /* RS3.png */; };
+		84DD412C20706DF7000CD253 /* RS2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DD412920706DF7000CD253 /* RS2.png */; };
+		84DD412D20706DF7000CD253 /* RS.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DD412A20706DF7000CD253 /* RS.png */; };
+		84DD412E20709125000CD253 /* Duke Fill.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84E991452066556A003920D8 /* Duke Fill.otf */; };
+		84DD412F20709125000CD253 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84E991442066556A003920D8 /* Raleway-Regular.ttf */; };
+		84DD4133207154AF000CD253 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD4132207154AF000CD253 /* EventsTableViewController.swift */; };
+		84DD413620715897000CD253 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD413520715897000CD253 /* Events.swift */; };
+		84DD41382071E44F000CD253 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD41372071E44F000CD253 /* MenuTableViewCell.swift */; };
+		84DD413A20728991000CD253 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD413920728991000CD253 /* EventTableViewCell.swift */; };
+		84DD413E20748CD0000CD253 /* Members.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD413D20748CD0000CD253 /* Members.swift */; };
+		84DD414020751DFC000CD253 /* TeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD413F20751DFC000CD253 /* TeamTableViewController.swift */; };
+		84DD4142207522E0000CD253 /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD4141207522E0000CD253 /* TeamTableViewCell.swift */; };
+		84DD414720752C85000CD253 /* UIImageView+ImageDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD414620752C85000CD253 /* UIImageView+ImageDownload.swift */; };
+		84DD4149207632A7000CD253 /* infoHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DD4148207632A7000CD253 /* infoHeader.png */; };
+		84DD414B207AF624000CD253 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD414A207AF624000CD253 /* EventDetailViewController.swift */; };
+		84DE33F22062A18F00BCF842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE33F12062A18F00BCF842 /* AppDelegate.swift */; };
+		84DE33F42062A18F00BCF842 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE33F32062A18F00BCF842 /* TwitterViewController.swift */; };
+		84DE33F72062A18F00BCF842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DE33F52062A18F00BCF842 /* Main.storyboard */; };
+		84DE33FA2062A18F00BCF842 /* Regenerate_Society.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84DE33F82062A18F00BCF842 /* Regenerate_Society.xcdatamodeld */; };
+		84DE33FC2062A18F00BCF842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DE33FB2062A18F00BCF842 /* Assets.xcassets */; };
+		84DE33FF2062A18F00BCF842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DE33FD2062A18F00BCF842 /* LaunchScreen.storyboard */; };
+		84DE340A2062A18F00BCF842 /* Regenerate_SocietyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE34092062A18F00BCF842 /* Regenerate_SocietyTests.swift */; };
+		84DE34152062A18F00BCF842 /* Regenerate_SocietyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE34142062A18F00BCF842 /* Regenerate_SocietyUITests.swift */; };
+		84E9914120665315003920D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84E9914020665315003920D8 /* GoogleService-Info.plist */; };
+		84E9914F20665572003920D8 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E9914620665571003920D8 /* title.png */; };
+		84E9915020665572003920D8 /* cellBG1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E9914720665571003920D8 /* cellBG1.png */; };
+		84E9915120665572003920D8 /* cellBG2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E9914820665571003920D8 /* cellBG2.png */; };
+		84E9915220665572003920D8 /* textFieldBG1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E9914920665571003920D8 /* textFieldBG1.png */; };
+		84E9915320665572003920D8 /* backBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E9914A20665571003920D8 /* backBtn.png */; };
+		84E9915420665572003920D8 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E9914B20665572003920D8 /* logo.png */; };
+		84E9915520665572003920D8 /* navBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E9914C20665572003920D8 /* navBar.png */; };
+		84E9915620665572003920D8 /* cellBG3.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E9914D20665572003920D8 /* cellBG3.png */; };
+		84E9915720665572003920D8 /* textFieldBG2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E9914E20665572003920D8 /* textFieldBG2.png */; };
+		84E9915B206658FC003920D8 /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E9915A206658FC003920D8 /* header.png */; };
+		8853FF3EE76919861BE949E1 /* Pods_Regenerate_SocietyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C892D0A42D9887190B93E553 /* Pods_Regenerate_SocietyTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84DE34062062A18F00BCF842 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84DE33E62062A18F00BCF842 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84DE33ED2062A18F00BCF842;
+			remoteInfo = "Regenerate Society";
+		};
+		84DE34112062A18F00BCF842 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84DE33E62062A18F00BCF842 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84DE33ED2062A18F00BCF842;
+			remoteInfo = "Regenerate Society";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26224158180377CF85A0BB1E /* Pods-Regenerate Society.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Regenerate Society.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Regenerate Society/Pods-Regenerate Society.debug.xcconfig"; sourceTree = "<group>"; };
+		3B890BDE6EC79A364357BE49 /* Pods_Regenerate_Society.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Regenerate_Society.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		798EE2A5E252A12837C16B14 /* Pods-Regenerate SocietyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Regenerate SocietyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Regenerate SocietyUITests/Pods-Regenerate SocietyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		84679CCF20A903910002D865 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		84679CD320A907840002D865 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		849701A9207DBCAA003D46A1 /* EventDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailTableViewCell.swift; sourceTree = "<group>"; };
+		84DD410F2070422D000CD253 /* Regenerate Society.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Regenerate Society.entitlements"; sourceTree = "<group>"; };
+		84DD411020704265000CD253 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		84DD411220704394000CD253 /* Twitter.blank.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Twitter.blank.plist; sourceTree = "<group>"; };
+		84DD411320704394000CD253 /* Twitter.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Twitter.plist; sourceTree = "<group>"; };
+		84DD411720704537000CD253 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		84DD411920704538000CD253 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		84DD4122207045C0000CD253 /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterShareExtensionUIResources.bundle; sourceTree = "<group>"; };
+		84DD4123207045C0000CD253 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
+		84DD412620704C4F000CD253 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		84DD412820706DF7000CD253 /* RS3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RS3.png; path = "Regenerate Society/Resources/Images/RS3.png"; sourceTree = SOURCE_ROOT; };
+		84DD412920706DF7000CD253 /* RS2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RS2.png; path = "Regenerate Society/Resources/Images/RS2.png"; sourceTree = SOURCE_ROOT; };
+		84DD412A20706DF7000CD253 /* RS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RS.png; path = "Regenerate Society/Resources/Images/RS.png"; sourceTree = SOURCE_ROOT; };
+		84DD4132207154AF000CD253 /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		84DD413520715897000CD253 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		84DD41372071E44F000CD253 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		84DD413920728991000CD253 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		84DD413D20748CD0000CD253 /* Members.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Members.swift; sourceTree = "<group>"; };
+		84DD413F20751DFC000CD253 /* TeamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewController.swift; sourceTree = "<group>"; };
+		84DD4141207522E0000CD253 /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
+		84DD414620752C85000CD253 /* UIImageView+ImageDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+ImageDownload.swift"; sourceTree = "<group>"; };
+		84DD4148207632A7000CD253 /* infoHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = infoHeader.png; path = "Regenerate Society/Resources/Images/infoHeader.png"; sourceTree = SOURCE_ROOT; };
+		84DD414A207AF624000CD253 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		84DE33EE2062A18F00BCF842 /* Regenerate Society.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Regenerate Society.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DE33F12062A18F00BCF842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84DE33F32062A18F00BCF842 /* TwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
+		84DE33F62062A18F00BCF842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84DE33F92062A18F00BCF842 /* Regenerate_Society.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Regenerate_Society.xcdatamodel; sourceTree = "<group>"; };
+		84DE33FB2062A18F00BCF842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84DE33FE2062A18F00BCF842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84DE34002062A18F00BCF842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DE34052062A18F00BCF842 /* Regenerate SocietyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Regenerate SocietyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DE34092062A18F00BCF842 /* Regenerate_SocietyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regenerate_SocietyTests.swift; sourceTree = "<group>"; };
+		84DE340B2062A18F00BCF842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DE34102062A18F00BCF842 /* Regenerate SocietyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Regenerate SocietyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DE34142062A18F00BCF842 /* Regenerate_SocietyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regenerate_SocietyUITests.swift; sourceTree = "<group>"; };
+		84DE34162062A19000BCF842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E9914020665315003920D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84E991442066556A003920D8 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Regular.ttf"; path = "Regenerate Society/Resources/Fonts/Raleway-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		84E991452066556A003920D8 /* Duke Fill.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Duke Fill.otf"; path = "Regenerate Society/Resources/Fonts/Duke Fill.otf"; sourceTree = SOURCE_ROOT; };
+		84E9914620665571003920D8 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = title.png; path = "Regenerate Society/Resources/Images/title.png"; sourceTree = SOURCE_ROOT; };
+		84E9914720665571003920D8 /* cellBG1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cellBG1.png; path = "Regenerate Society/Resources/Images/cellBG1.png"; sourceTree = SOURCE_ROOT; };
+		84E9914820665571003920D8 /* cellBG2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cellBG2.png; path = "Regenerate Society/Resources/Images/cellBG2.png"; sourceTree = SOURCE_ROOT; };
+		84E9914920665571003920D8 /* textFieldBG1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = textFieldBG1.png; path = "Regenerate Society/Resources/Images/textFieldBG1.png"; sourceTree = SOURCE_ROOT; };
+		84E9914A20665571003920D8 /* backBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backBtn.png; path = "Regenerate Society/Resources/Images/backBtn.png"; sourceTree = SOURCE_ROOT; };
+		84E9914B20665572003920D8 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = "Regenerate Society/Resources/Images/logo.png"; sourceTree = SOURCE_ROOT; };
+		84E9914C20665572003920D8 /* navBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = navBar.png; path = "Regenerate Society/Resources/Images/navBar.png"; sourceTree = SOURCE_ROOT; };
+		84E9914D20665572003920D8 /* cellBG3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cellBG3.png; path = "Regenerate Society/Resources/Images/cellBG3.png"; sourceTree = SOURCE_ROOT; };
+		84E9914E20665572003920D8 /* textFieldBG2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = textFieldBG2.png; path = "Regenerate Society/Resources/Images/textFieldBG2.png"; sourceTree = SOURCE_ROOT; };
+		84E9915A206658FC003920D8 /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = header.png; path = "Regenerate Society/Resources/Images/header.png"; sourceTree = SOURCE_ROOT; };
+		9F577F3C44A8E1166F838BCE /* Pods-Regenerate Society.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Regenerate Society.release.xcconfig"; path = "Pods/Target Support Files/Pods-Regenerate Society/Pods-Regenerate Society.release.xcconfig"; sourceTree = "<group>"; };
+		A2456F51420D36DDF1D75E4D /* Pods-Regenerate SocietyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Regenerate SocietyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Regenerate SocietyTests/Pods-Regenerate SocietyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C892D0A42D9887190B93E553 /* Pods_Regenerate_SocietyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Regenerate_SocietyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E20901665D9FA32BD554FB /* Pods-Regenerate SocietyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Regenerate SocietyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Regenerate SocietyTests/Pods-Regenerate SocietyTests.release.xcconfig"; sourceTree = "<group>"; };
+		D27ADEE07316ED7995C323E2 /* Pods_Regenerate_SocietyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Regenerate_SocietyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D563FDB67C6FCF2D992E34DA /* Pods-Regenerate SocietyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Regenerate SocietyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Regenerate SocietyUITests/Pods-Regenerate SocietyUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84DE33EB2062A18F00BCF842 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DD411B20704538000CD253 /* TwitterKit.framework in Frameworks */,
+				84DD411D20704538000CD253 /* TwitterCore.framework in Frameworks */,
+				84DD411120704265000CD253 /* Twitter.framework in Frameworks */,
+				53BC71739222B114031F075A /* Pods_Regenerate_Society.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DE34022062A18F00BCF842 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8853FF3EE76919861BE949E1 /* Pods_Regenerate_SocietyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DE340D2062A18F00BCF842 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D0FDF102D1116C7AD1D7AB6 /* Pods_Regenerate_SocietyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8022A5EAD307597D35FF9579 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26224158180377CF85A0BB1E /* Pods-Regenerate Society.debug.xcconfig */,
+				9F577F3C44A8E1166F838BCE /* Pods-Regenerate Society.release.xcconfig */,
+				A2456F51420D36DDF1D75E4D /* Pods-Regenerate SocietyTests.debug.xcconfig */,
+				C9E20901665D9FA32BD554FB /* Pods-Regenerate SocietyTests.release.xcconfig */,
+				798EE2A5E252A12837C16B14 /* Pods-Regenerate SocietyUITests.debug.xcconfig */,
+				D563FDB67C6FCF2D992E34DA /* Pods-Regenerate SocietyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8492C5FC2065A96500498DDF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84E991432066554C003920D8 /* Fonts */,
+				84E991422066553B003920D8 /* Images */,
+			);
+			name = Resources;
+			path = "/Users/MrHorace/Projects/Xcode/Regenerate Society/Regenerate Society/New Group";
+			sourceTree = "<absolute>";
+		};
+		84DD4134207154B9000CD253 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84DD4132207154AF000CD253 /* EventsTableViewController.swift */,
+				84DD414A207AF624000CD253 /* EventDetailViewController.swift */,
+				84679CCF20A903910002D865 /* GalleryViewController.swift */,
+				84DD412620704C4F000CD253 /* HomeViewController.swift */,
+				84679CD320A907840002D865 /* LaunchViewController.swift */,
+				84DD413F20751DFC000CD253 /* TeamTableViewController.swift */,
+				84DE33F32062A18F00BCF842 /* TwitterViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84DD413B2072899A000CD253 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84DD413920728991000CD253 /* EventTableViewCell.swift */,
+				849701A9207DBCAA003D46A1 /* EventDetailTableViewCell.swift */,
+				84DD41372071E44F000CD253 /* MenuTableViewCell.swift */,
+				84DD4141207522E0000CD253 /* TeamTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84DD413C207289AA000CD253 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84DD413520715897000CD253 /* Events.swift */,
+				84DD413D20748CD0000CD253 /* Members.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84DD414520752C0F000CD253 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				84DD414620752C85000CD253 /* UIImageView+ImageDownload.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		84DE33E52062A18F00BCF842 = {
+			isa = PBXGroup;
+			children = (
+				84DE33F02062A18F00BCF842 /* Regenerate Society */,
+				84DE34082062A18F00BCF842 /* Regenerate SocietyTests */,
+				84DE34132062A18F00BCF842 /* Regenerate SocietyUITests */,
+				84DE33EF2062A18F00BCF842 /* Products */,
+				8022A5EAD307597D35FF9579 /* Pods */,
+				C5FDFE8AEA88B1CF539A78AC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84DE33EF2062A18F00BCF842 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84DE33EE2062A18F00BCF842 /* Regenerate Society.app */,
+				84DE34052062A18F00BCF842 /* Regenerate SocietyTests.xctest */,
+				84DE34102062A18F00BCF842 /* Regenerate SocietyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84DE33F02062A18F00BCF842 /* Regenerate Society */ = {
+			isa = PBXGroup;
+			children = (
+				84DD410F2070422D000CD253 /* Regenerate Society.entitlements */,
+				84DE33F12062A18F00BCF842 /* AppDelegate.swift */,
+				84DD414520752C0F000CD253 /* Operations */,
+				84DD413C207289AA000CD253 /* Model */,
+				84DD413B2072899A000CD253 /* Views */,
+				84DD4134207154B9000CD253 /* Controllers */,
+				84DE33F52062A18F00BCF842 /* Main.storyboard */,
+				84DE33FB2062A18F00BCF842 /* Assets.xcassets */,
+				84DE33FD2062A18F00BCF842 /* LaunchScreen.storyboard */,
+				84DE34002062A18F00BCF842 /* Info.plist */,
+				84E9914020665315003920D8 /* GoogleService-Info.plist */,
+				84DD411220704394000CD253 /* Twitter.blank.plist */,
+				84DD411320704394000CD253 /* Twitter.plist */,
+				8492C5FC2065A96500498DDF /* Resources */,
+				84DE33F82062A18F00BCF842 /* Regenerate_Society.xcdatamodeld */,
+			);
+			path = "Regenerate Society";
+			sourceTree = "<group>";
+		};
+		84DE34082062A18F00BCF842 /* Regenerate SocietyTests */ = {
+			isa = PBXGroup;
+			children = (
+				84DE34092062A18F00BCF842 /* Regenerate_SocietyTests.swift */,
+				84DE340B2062A18F00BCF842 /* Info.plist */,
+			);
+			path = "Regenerate SocietyTests";
+			sourceTree = "<group>";
+		};
+		84DE34132062A18F00BCF842 /* Regenerate SocietyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84DE34142062A18F00BCF842 /* Regenerate_SocietyUITests.swift */,
+				84DE34162062A19000BCF842 /* Info.plist */,
+			);
+			path = "Regenerate SocietyUITests";
+			sourceTree = "<group>";
+		};
+		84E991422066553B003920D8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				84DD4148207632A7000CD253 /* infoHeader.png */,
+				84DD412A20706DF7000CD253 /* RS.png */,
+				84DD412920706DF7000CD253 /* RS2.png */,
+				84DD412820706DF7000CD253 /* RS3.png */,
+				84E9914A20665571003920D8 /* backBtn.png */,
+				84E9914720665571003920D8 /* cellBG1.png */,
+				84E9914820665571003920D8 /* cellBG2.png */,
+				84E9914D20665572003920D8 /* cellBG3.png */,
+				84E9915A206658FC003920D8 /* header.png */,
+				84E9914B20665572003920D8 /* logo.png */,
+				84E9914C20665572003920D8 /* navBar.png */,
+				84E9914920665571003920D8 /* textFieldBG1.png */,
+				84E9914E20665572003920D8 /* textFieldBG2.png */,
+				84E9914620665571003920D8 /* title.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		84E991432066554C003920D8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				84E991452066556A003920D8 /* Duke Fill.otf */,
+				84E991442066556A003920D8 /* Raleway-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C5FDFE8AEA88B1CF539A78AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84DD4123207045C0000CD253 /* TwitterKitResources.bundle */,
+				84DD4122207045C0000CD253 /* TwitterShareExtensionUIResources.bundle */,
+				84DD411920704538000CD253 /* TwitterCore.framework */,
+				84DD411720704537000CD253 /* TwitterKit.framework */,
+				84DD411020704265000CD253 /* Twitter.framework */,
+				3B890BDE6EC79A364357BE49 /* Pods_Regenerate_Society.framework */,
+				C892D0A42D9887190B93E553 /* Pods_Regenerate_SocietyTests.framework */,
+				D27ADEE07316ED7995C323E2 /* Pods_Regenerate_SocietyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84DE33ED2062A18F00BCF842 /* Regenerate Society */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84DE34192062A19000BCF842 /* Build configuration list for PBXNativeTarget "Regenerate Society" */;
+			buildPhases = (
+				8B1674F086289B5F6E722376 /* [CP] Check Pods Manifest.lock */,
+				84DE33EA2062A18F00BCF842 /* Sources */,
+				84DE33EB2062A18F00BCF842 /* Frameworks */,
+				84DE33EC2062A18F00BCF842 /* Resources */,
+				8E41B76E7C966B9957783F51 /* [CP] Embed Pods Frameworks */,
+				4F8C0EF7CF6F864E74061F7B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Regenerate Society";
+			productName = "Regenerate Society";
+			productReference = 84DE33EE2062A18F00BCF842 /* Regenerate Society.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84DE34042062A18F00BCF842 /* Regenerate SocietyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84DE341C2062A19000BCF842 /* Build configuration list for PBXNativeTarget "Regenerate SocietyTests" */;
+			buildPhases = (
+				2A7F87BE6CAC4FF2EE1CEED7 /* [CP] Check Pods Manifest.lock */,
+				84DE34012062A18F00BCF842 /* Sources */,
+				84DE34022062A18F00BCF842 /* Frameworks */,
+				84DE34032062A18F00BCF842 /* Resources */,
+				1E2F0AB8ED9C3BE0D03EC141 /* [CP] Embed Pods Frameworks */,
+				169FA1E9527C52B18B91B623 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84DE34072062A18F00BCF842 /* PBXTargetDependency */,
+			);
+			name = "Regenerate SocietyTests";
+			productName = "Regenerate SocietyTests";
+			productReference = 84DE34052062A18F00BCF842 /* Regenerate SocietyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84DE340F2062A18F00BCF842 /* Regenerate SocietyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84DE341F2062A19000BCF842 /* Build configuration list for PBXNativeTarget "Regenerate SocietyUITests" */;
+			buildPhases = (
+				46B6C295E9EB7B927061AF74 /* [CP] Check Pods Manifest.lock */,
+				84DE340C2062A18F00BCF842 /* Sources */,
+				84DE340D2062A18F00BCF842 /* Frameworks */,
+				84DE340E2062A18F00BCF842 /* Resources */,
+				A949FD10AF75381E47E01518 /* [CP] Embed Pods Frameworks */,
+				C35525D0361689DEE3119A40 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84DE34122062A18F00BCF842 /* PBXTargetDependency */,
+			);
+			name = "Regenerate SocietyUITests";
+			productName = "Regenerate SocietyUITests";
+			productReference = 84DE34102062A18F00BCF842 /* Regenerate SocietyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84DE33E62062A18F00BCF842 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "HD2Technology LLC";
+				TargetAttributes = {
+					84DE33ED2062A18F00BCF842 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					84DE34042062A18F00BCF842 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 84DE33ED2062A18F00BCF842;
+					};
+					84DE340F2062A18F00BCF842 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 84DE33ED2062A18F00BCF842;
+					};
+				};
+			};
+			buildConfigurationList = 84DE33E92062A18F00BCF842 /* Build configuration list for PBXProject "Regenerate Society" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84DE33E52062A18F00BCF842;
+			productRefGroup = 84DE33EF2062A18F00BCF842 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84DE33ED2062A18F00BCF842 /* Regenerate Society */,
+				84DE34042062A18F00BCF842 /* Regenerate SocietyTests */,
+				84DE340F2062A18F00BCF842 /* Regenerate SocietyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84DE33EC2062A18F00BCF842 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DD412E20709125000CD253 /* Duke Fill.otf in Resources */,
+				84DD412F20709125000CD253 /* Raleway-Regular.ttf in Resources */,
+				84E9915020665572003920D8 /* cellBG1.png in Resources */,
+				84DD4124207045C0000CD253 /* TwitterShareExtensionUIResources.bundle in Resources */,
+				84DE33FF2062A18F00BCF842 /* LaunchScreen.storyboard in Resources */,
+				84DD412D20706DF7000CD253 /* RS.png in Resources */,
+				84DD4149207632A7000CD253 /* infoHeader.png in Resources */,
+				84E9915320665572003920D8 /* backBtn.png in Resources */,
+				84E9915B206658FC003920D8 /* header.png in Resources */,
+				84E9915120665572003920D8 /* cellBG2.png in Resources */,
+				84E9914120665315003920D8 /* GoogleService-Info.plist in Resources */,
+				84E9915520665572003920D8 /* navBar.png in Resources */,
+				84E9915620665572003920D8 /* cellBG3.png in Resources */,
+				84DE33FC2062A18F00BCF842 /* Assets.xcassets in Resources */,
+				84E9915420665572003920D8 /* logo.png in Resources */,
+				84DD411520704394000CD253 /* Twitter.plist in Resources */,
+				84DE33F72062A18F00BCF842 /* Main.storyboard in Resources */,
+				84E9915220665572003920D8 /* textFieldBG1.png in Resources */,
+				84E9914F20665572003920D8 /* title.png in Resources */,
+				84E9915720665572003920D8 /* textFieldBG2.png in Resources */,
+				84DD4125207045C0000CD253 /* TwitterKitResources.bundle in Resources */,
+				84DD412C20706DF7000CD253 /* RS2.png in Resources */,
+				84DD412B20706DF7000CD253 /* RS3.png in Resources */,
+				84DD411420704394000CD253 /* Twitter.blank.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DE34032062A18F00BCF842 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DE340E2062A18F00BCF842 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		169FA1E9527C52B18B91B623 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Regenerate SocietyTests/Pods-Regenerate SocietyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E2F0AB8ED9C3BE0D03EC141 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Regenerate SocietyTests/Pods-Regenerate SocietyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A7F87BE6CAC4FF2EE1CEED7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Regenerate SocietyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46B6C295E9EB7B927061AF74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Regenerate SocietyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F8C0EF7CF6F864E74061F7B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Regenerate Society/Pods-Regenerate Society-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B1674F086289B5F6E722376 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Regenerate Society-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E41B76E7C966B9957783F51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Regenerate Society/Pods-Regenerate Society-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Regenerate Society/Pods-Regenerate Society-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A949FD10AF75381E47E01518 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Regenerate SocietyUITests/Pods-Regenerate SocietyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C35525D0361689DEE3119A40 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Regenerate SocietyUITests/Pods-Regenerate SocietyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84DE33EA2062A18F00BCF842 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DD413E20748CD0000CD253 /* Members.swift in Sources */,
+				84DD413A20728991000CD253 /* EventTableViewCell.swift in Sources */,
+				84DE33F42062A18F00BCF842 /* TwitterViewController.swift in Sources */,
+				849701AA207DBCAA003D46A1 /* EventDetailTableViewCell.swift in Sources */,
+				84DD414B207AF624000CD253 /* EventDetailViewController.swift in Sources */,
+				84DE33F22062A18F00BCF842 /* AppDelegate.swift in Sources */,
+				84DD414720752C85000CD253 /* UIImageView+ImageDownload.swift in Sources */,
+				84DD41382071E44F000CD253 /* MenuTableViewCell.swift in Sources */,
+				84DD4133207154AF000CD253 /* EventsTableViewController.swift in Sources */,
+				84DD414020751DFC000CD253 /* TeamTableViewController.swift in Sources */,
+				84DD413620715897000CD253 /* Events.swift in Sources */,
+				84DE33FA2062A18F00BCF842 /* Regenerate_Society.xcdatamodeld in Sources */,
+				84679CD020A903910002D865 /* GalleryViewController.swift in Sources */,
+				84DD412720704C4F000CD253 /* HomeViewController.swift in Sources */,
+				84DD4142207522E0000CD253 /* TeamTableViewCell.swift in Sources */,
+				84679CD420A907840002D865 /* LaunchViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DE34012062A18F00BCF842 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DE340A2062A18F00BCF842 /* Regenerate_SocietyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DE340C2062A18F00BCF842 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DE34152062A18F00BCF842 /* Regenerate_SocietyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84DE34072062A18F00BCF842 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84DE33ED2062A18F00BCF842 /* Regenerate Society */;
+			targetProxy = 84DE34062062A18F00BCF842 /* PBXContainerItemProxy */;
+		};
+		84DE34122062A18F00BCF842 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84DE33ED2062A18F00BCF842 /* Regenerate Society */;
+			targetProxy = 84DE34112062A18F00BCF842 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84DE33F52062A18F00BCF842 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84DE33F62062A18F00BCF842 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84DE33FD2062A18F00BCF842 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84DE33FE2062A18F00BCF842 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84DE34172062A19000BCF842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84DE34182062A19000BCF842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84DE341A2062A19000BCF842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26224158180377CF85A0BB1E /* Pods-Regenerate Society.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Regenerate Society/Regenerate Society.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TJ9QMXW52J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Regenerate Society/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HD2Technology.Regenerate-Society";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84DE341B2062A19000BCF842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F577F3C44A8E1166F838BCE /* Pods-Regenerate Society.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Regenerate Society/Regenerate Society.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TJ9QMXW52J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Regenerate Society/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HD2Technology.Regenerate-Society";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84DE341D2062A19000BCF842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2456F51420D36DDF1D75E4D /* Pods-Regenerate SocietyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8V783DP7TW;
+				INFOPLIST_FILE = "Regenerate SocietyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HD2Technology.Regenerate-SocietyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Regenerate Society.app/Regenerate Society";
+			};
+			name = Debug;
+		};
+		84DE341E2062A19000BCF842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9E20901665D9FA32BD554FB /* Pods-Regenerate SocietyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8V783DP7TW;
+				INFOPLIST_FILE = "Regenerate SocietyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HD2Technology.Regenerate-SocietyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Regenerate Society.app/Regenerate Society";
+			};
+			name = Release;
+		};
+		84DE34202062A19000BCF842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 798EE2A5E252A12837C16B14 /* Pods-Regenerate SocietyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8V783DP7TW;
+				INFOPLIST_FILE = "Regenerate SocietyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HD2Technology.Regenerate-SocietyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Regenerate Society";
+			};
+			name = Debug;
+		};
+		84DE34212062A19000BCF842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D563FDB67C6FCF2D992E34DA /* Pods-Regenerate SocietyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8V783DP7TW;
+				INFOPLIST_FILE = "Regenerate SocietyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HD2Technology.Regenerate-SocietyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Regenerate Society";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84DE33E92062A18F00BCF842 /* Build configuration list for PBXProject "Regenerate Society" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DE34172062A19000BCF842 /* Debug */,
+				84DE34182062A19000BCF842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84DE34192062A19000BCF842 /* Build configuration list for PBXNativeTarget "Regenerate Society" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DE341A2062A19000BCF842 /* Debug */,
+				84DE341B2062A19000BCF842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84DE341C2062A19000BCF842 /* Build configuration list for PBXNativeTarget "Regenerate SocietyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DE341D2062A19000BCF842 /* Debug */,
+				84DE341E2062A19000BCF842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84DE341F2062A19000BCF842 /* Build configuration list for PBXNativeTarget "Regenerate SocietyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DE34202062A19000BCF842 /* Debug */,
+				84DE34212062A19000BCF842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		84DE33F82062A18F00BCF842 /* Regenerate_Society.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84DE33F92062A18F00BCF842 /* Regenerate_Society.xcdatamodel */,
+			);
+			currentVersion = 84DE33F92062A18F00BCF842 /* Regenerate_Society.xcdatamodel */;
+			path = Regenerate_Society.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 84DE33E62062A18F00BCF842 /* Project object */;
+}
