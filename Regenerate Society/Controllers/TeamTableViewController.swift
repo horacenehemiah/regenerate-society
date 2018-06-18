@@ -70,6 +70,27 @@ class TeamTableViewController: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if (indexPath.row == 0) {
+            if let url = URL(string: "https://www.iamwescam.com") {
+                UIApplication.shared.open(url, options: [:])
+            }
+        } else if (indexPath.row == 1) {
+            if let url = URL(string: "http://legendarykreations.com") {
+                UIApplication.shared.open(url, options: [:])
+            }
+        } else if (indexPath.row == 2) {
+            if let url = URL(string: "https://hd2technology.com") {
+                UIApplication.shared.open(url, options: [:])
+            }
+        } else if (indexPath.row == 4) {
+            if let url = URL(string: "https://www.miyakostudios.com") {
+                UIApplication.shared.open(url, options: [:])
+            }
+        }
+
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -78,18 +99,40 @@ class TeamTableViewController: UITableViewController {
         return true
     }
     */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let info = UITableViewRowAction(style: .normal, title: "ℹ︎") { (action, indexPath) in
+            if (indexPath.row == 0) {
+                if let url = URL(string: "https://thisisrsociety.com/wesley_wright/") {
+                    UIApplication.shared.open(url, options: [:])
+                }
+            } else if (indexPath.row == 1) {
+                if let url = URL(string: "https://thisisrsociety.com/0-oj-montgomery/") {
+                    UIApplication.shared.open(url, options: [:])
+                }
+            } else if (indexPath.row == 2) {
+                if let url = URL(string: "https://thisisrsociety.com/april-moton/8-sheleka-laseter/") {
+                    UIApplication.shared.open(url, options: [:])
+                }
+            } else if (indexPath.row == 3) {
+                if let url = URL(string: "https://thisisrsociety.com/4-nehemiah-horace/") {
+                    UIApplication.shared.open(url, options: [:])
+                }
+            } else if (indexPath.row == 4) {
+                if let url = URL(string: "https://thisisrsociety.com/8-sheleka-laseter/") {
+                    UIApplication.shared.open(url, options: [:])
+                }
+            } else if (indexPath.row == 5) {
+                if let url = URL(string: "https://thisisrsociety.com/briauna-perryman/") {
+                    UIApplication.shared.open(url, options: [:])
+                }
+            }
+        }
+        
+        info.backgroundColor = UIColor.black
+        
+        return [info]
     }
-    */
 
     /*
     // Override to support rearranging the table view.
