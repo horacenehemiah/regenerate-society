@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		53BC71739222B114031F075A /* Pods_Regenerate_Society.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B890BDE6EC79A364357BE49 /* Pods_Regenerate_Society.framework */; };
 		5D0FDF102D1116C7AD1D7AB6 /* Pods_Regenerate_SocietyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27ADEE07316ED7995C323E2 /* Pods_Regenerate_SocietyUITests.framework */; };
-		84679CD020A903910002D865 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84679CCF20A903910002D865 /* GalleryViewController.swift */; };
 		84679CD420A907840002D865 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84679CD320A907840002D865 /* LaunchViewController.swift */; };
 		849701AA207DBCAA003D46A1 /* EventDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849701A9207DBCAA003D46A1 /* EventDetailTableViewCell.swift */; };
+		84B0808220D98DA50035E435 /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0808120D98DA50035E435 /* GalleryTableViewCell.swift */; };
+		84B0808420D9C18B0035E435 /* AddressBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0808320D9C18B0035E435 /* AddressBookViewController.swift */; };
+		84D5F55020D8B07C009B6172 /* GalleryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5F54F20D8B07C009B6172 /* GalleryTableViewController.swift */; };
 		84DD411120704265000CD253 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DD411020704265000CD253 /* Twitter.framework */; };
 		84DD411420704394000CD253 /* Twitter.blank.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84DD411220704394000CD253 /* Twitter.blank.plist */; };
 		84DD411520704394000CD253 /* Twitter.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84DD411320704394000CD253 /* Twitter.plist */; };
@@ -78,9 +80,11 @@
 		26224158180377CF85A0BB1E /* Pods-Regenerate Society.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Regenerate Society.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Regenerate Society/Pods-Regenerate Society.debug.xcconfig"; sourceTree = "<group>"; };
 		3B890BDE6EC79A364357BE49 /* Pods_Regenerate_Society.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Regenerate_Society.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		798EE2A5E252A12837C16B14 /* Pods-Regenerate SocietyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Regenerate SocietyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Regenerate SocietyUITests/Pods-Regenerate SocietyUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		84679CCF20A903910002D865 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		84679CD320A907840002D865 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		849701A9207DBCAA003D46A1 /* EventDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailTableViewCell.swift; sourceTree = "<group>"; };
+		84B0808120D98DA50035E435 /* GalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewCell.swift; sourceTree = "<group>"; };
+		84B0808320D9C18B0035E435 /* AddressBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookViewController.swift; sourceTree = "<group>"; };
+		84D5F54F20D8B07C009B6172 /* GalleryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewController.swift; sourceTree = "<group>"; };
 		84DD410F2070422D000CD253 /* Regenerate Society.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Regenerate Society.entitlements"; sourceTree = "<group>"; };
 		84DD411020704265000CD253 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		84DD411220704394000CD253 /* Twitter.blank.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Twitter.blank.plist; sourceTree = "<group>"; };
@@ -195,9 +199,10 @@
 		84DD4134207154B9000CD253 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				84B0808320D9C18B0035E435 /* AddressBookViewController.swift */,
 				84DD4132207154AF000CD253 /* EventsTableViewController.swift */,
 				84DD414A207AF624000CD253 /* EventDetailViewController.swift */,
-				84679CCF20A903910002D865 /* GalleryViewController.swift */,
+				84D5F54F20D8B07C009B6172 /* GalleryTableViewController.swift */,
 				84DD412620704C4F000CD253 /* HomeViewController.swift */,
 				84679CD320A907840002D865 /* LaunchViewController.swift */,
 				84DD413F20751DFC000CD253 /* TeamTableViewController.swift */,
@@ -211,6 +216,7 @@
 			children = (
 				84DD413920728991000CD253 /* EventTableViewCell.swift */,
 				849701A9207DBCAA003D46A1 /* EventDetailTableViewCell.swift */,
+				84B0808120D98DA50035E435 /* GalleryTableViewCell.swift */,
 				84DD41372071E44F000CD253 /* MenuTableViewCell.swift */,
 				84DD4141207522E0000CD253 /* TeamTableViewCell.swift */,
 			);
@@ -670,15 +676,17 @@
 				84DD413A20728991000CD253 /* EventTableViewCell.swift in Sources */,
 				84DE33F42062A18F00BCF842 /* TwitterViewController.swift in Sources */,
 				849701AA207DBCAA003D46A1 /* EventDetailTableViewCell.swift in Sources */,
+				84D5F55020D8B07C009B6172 /* GalleryTableViewController.swift in Sources */,
 				84DD414B207AF624000CD253 /* EventDetailViewController.swift in Sources */,
 				84DE33F22062A18F00BCF842 /* AppDelegate.swift in Sources */,
 				84DD414720752C85000CD253 /* UIImageView+ImageDownload.swift in Sources */,
 				84DD41382071E44F000CD253 /* MenuTableViewCell.swift in Sources */,
+				84B0808220D98DA50035E435 /* GalleryTableViewCell.swift in Sources */,
 				84DD4133207154AF000CD253 /* EventsTableViewController.swift in Sources */,
 				84DD414020751DFC000CD253 /* TeamTableViewController.swift in Sources */,
+				84B0808420D9C18B0035E435 /* AddressBookViewController.swift in Sources */,
 				84DD413620715897000CD253 /* Events.swift in Sources */,
 				84DE33FA2062A18F00BCF842 /* Regenerate_Society.xcdatamodeld in Sources */,
-				84679CD020A903910002D865 /* GalleryViewController.swift in Sources */,
 				84DD412720704C4F000CD253 /* HomeViewController.swift in Sources */,
 				84DD4142207522E0000CD253 /* TeamTableViewCell.swift in Sources */,
 				84679CD420A907840002D865 /* LaunchViewController.swift in Sources */,

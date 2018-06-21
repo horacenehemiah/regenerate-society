@@ -1,23 +1,29 @@
 //
-//  EventsTableViewController.swift
+//  GalleryTableViewController.swift
 //  Regenerate Society
 //
-//  Created by Nehemiah Horace on 4/1/18.
+//  Created by Nehemiah Horace on 6/18/18.
 //  Copyright © 2018 HD2Technology LLC. All rights reserved.
 //
 
 import UIKit
 import Firebase
 
-class EventsTableViewController: UITableViewController {
+class GalleryTableViewController: UITableViewController {
     
-    var events = [Events]()
+    var galleryImages = [Any]()
     let databaseReference = Database.database().reference()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        getGalleryImages()
 
-        getListOfEvents()
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,22 +31,18 @@ class EventsTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func getListOfEvents() {
-        databaseReference.child("upcomingEvents").observe(DataEventType.value) {
+    func getGalleryImages() {
+        databaseReference.child("gallery").observe(DataEventType.value) {
             (snapshot) in
             
-            self.events = []
+            self.galleryImages = []
             
             if let snapshots = snapshot.children.allObjects as? [DataSnapshot] {
                 for snap in snapshots {
-                    if let eventDictionary = snap.value as? Dictionary<String, AnyObject> {
-                        let key = snap.key
-                        let event = Events(key: key, dictionary: eventDictionary)
-                        self.events.append(event)
-                    }
+                    self.galleryImages.insert(snap, at: 0)
                 }
             }
-            print("List of events: ", self.events)
+            print("List of images: ", self.galleryImages)
             self.tableView.reloadData()
         }
     }
@@ -48,32 +50,20 @@ class EventsTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        // #warning Incomplete implementation, return the number of sections
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return events.count
+        // #warning Incomplete implementation, return the number of rows
+        return galleryImages.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "eventIdentifier", for: indexPath) as! EventTableViewCell
-        let event = events[indexPath.row]
-        cell.configureCell(event)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellIdentifier", for: indexPath)
+        
 
         return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//        let eventDetailVC = storyBoard.instantiateViewController(withIdentifier: "EventDetailViewController") as! EventDetailViewController
-//        self.show(eventDetailVC, sender: self)
-        
-        UserDefaults.standard.set(events[indexPath.row].address, forKey: "address")
-        UserDefaults.standard.set(events[indexPath.row].eventDate, forKey: "eventDate")
-        UserDefaults.standard.set(events[indexPath.row].eventDate, forKey: "eventTime")
-        UserDefaults.standard.set(events[indexPath.row].location, forKey: "location")
-        UserDefaults.standard.set(events[indexPath.row].eventName, forKey: "name")
-        UserDefaults.standard.set(events[indexPath.row].what, forKey: "what")
     }
 
     /*

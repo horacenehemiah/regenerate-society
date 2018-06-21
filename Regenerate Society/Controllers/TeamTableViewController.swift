@@ -80,7 +80,7 @@ class TeamTableViewController: UITableViewController {
             if let url = URL(string: "http://legendarykreations.com") {
                 UIApplication.shared.open(url, options: [:])
             }
-        } else if (indexPath.row == 2) {
+        } else if (indexPath.row == 3) {
             if let url = URL(string: "https://hd2technology.com") {
                 UIApplication.shared.open(url, options: [:])
             }
@@ -111,7 +111,7 @@ class TeamTableViewController: UITableViewController {
                     UIApplication.shared.open(url, options: [:])
                 }
             } else if (indexPath.row == 2) {
-                if let url = URL(string: "https://thisisrsociety.com/april-moton/8-sheleka-laseter/") {
+                if let url = URL(string: "https://thisisrsociety.com/april-moton/") {
                     UIApplication.shared.open(url, options: [:])
                 }
             } else if (indexPath.row == 3) {

@@ -64,7 +64,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return 6
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -79,10 +79,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         } else if (indexPath.row == 3) {
             cell = tableView.dequeueReusableCell(withIdentifier: "meetTheTeamIdentifier", for: indexPath)
         } else if (indexPath.row == 4) {
-            cell = tableView.dequeueReusableCell(withIdentifier: "galleryIdentifier", for: indexPath)
-        } else if (indexPath.row == 5) {
             cell = tableView.dequeueReusableCell(withIdentifier: "aboutRSIdentifier", for: indexPath)
-        } else if (indexPath.row == 6) {
+        } else if (indexPath.row == 5) {
             cell = tableView.dequeueReusableCell(withIdentifier: "contactRSrIdentifier", for: indexPath)
         }
         
@@ -131,15 +129,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             teamContainer.isHidden = false
             showHideMenuView()
         } else if (indexPath.row == 4) {
-            titleLabel.text = "GALLERY"
-            twitterContainer.isHidden = true
-            eventContainer.isHidden = true
-            teamContainer.isHidden = true
-            galleryContainer.isHidden = false
-            aboutContainer.isHidden = true
-            contactContainer.isHidden = true
-            showHideMenuView()
-        } else if (indexPath.row == 5) {
             titleLabel.text = "ABOUT RS"
             mutableString = NSMutableAttributedString(string: titleLabel.text!, attributes: [NSAttributedStringKey.font:UIFont(name: "Duke", size: 36.0)!])
             mutableString.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor.white, range: NSRange(location:0,length:6))
@@ -151,7 +140,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             aboutContainer.isHidden = false
             contactContainer.isHidden = true
             showHideMenuView()
-        } else if (indexPath.row == 6) {
+        } else if (indexPath.row == 5) {
             titleLabel.text = "CONTACT RS"
             mutableString = NSMutableAttributedString(string: titleLabel.text!, attributes: [NSAttributedStringKey.font:UIFont(name: "Duke", size: 36.0)!])
             mutableString.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor.white, range: NSRange(location:0,length:8))
