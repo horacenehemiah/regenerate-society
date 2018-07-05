@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		53BC71739222B114031F075A /* Pods_Regenerate_Society.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B890BDE6EC79A364357BE49 /* Pods_Regenerate_Society.framework */; };
 		5D0FDF102D1116C7AD1D7AB6 /* Pods_Regenerate_SocietyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27ADEE07316ED7995C323E2 /* Pods_Regenerate_SocietyUITests.framework */; };
+		840D0D0820EC7CC20076BD5A /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 840D0D0620EC7CC10076BD5A /* logo2.png */; };
+		840D0D0920EC7CC20076BD5A /* logoTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 840D0D0720EC7CC20076BD5A /* logoTitle.png */; };
+		840D0D0B20EE8BBF0076BD5A /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D0D0A20EE8BBF0076BD5A /* Contacts.swift */; };
+		840D0D0D20EE91140076BD5A /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D0D0C20EE91140076BD5A /* ContactTableViewCell.swift */; };
 		84679CD420A907840002D865 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84679CD320A907840002D865 /* LaunchViewController.swift */; };
 		849701AA207DBCAA003D46A1 /* EventDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849701A9207DBCAA003D46A1 /* EventDetailTableViewCell.swift */; };
 		84B0808220D98DA50035E435 /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0808120D98DA50035E435 /* GalleryTableViewCell.swift */; };
@@ -80,6 +84,10 @@
 		26224158180377CF85A0BB1E /* Pods-Regenerate Society.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Regenerate Society.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Regenerate Society/Pods-Regenerate Society.debug.xcconfig"; sourceTree = "<group>"; };
 		3B890BDE6EC79A364357BE49 /* Pods_Regenerate_Society.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Regenerate_Society.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		798EE2A5E252A12837C16B14 /* Pods-Regenerate SocietyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Regenerate SocietyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Regenerate SocietyUITests/Pods-Regenerate SocietyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		840D0D0620EC7CC10076BD5A /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo2.png; path = "Regenerate Society/Resources/Images/logo2.png"; sourceTree = SOURCE_ROOT; };
+		840D0D0720EC7CC20076BD5A /* logoTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logoTitle.png; path = "Regenerate Society/Resources/Images/logoTitle.png"; sourceTree = SOURCE_ROOT; };
+		840D0D0A20EE8BBF0076BD5A /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		840D0D0C20EE91140076BD5A /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		84679CD320A907840002D865 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		849701A9207DBCAA003D46A1 /* EventDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailTableViewCell.swift; sourceTree = "<group>"; };
 		84B0808120D98DA50035E435 /* GalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewCell.swift; sourceTree = "<group>"; };
@@ -214,6 +222,7 @@
 		84DD413B2072899A000CD253 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				840D0D0C20EE91140076BD5A /* ContactTableViewCell.swift */,
 				84DD413920728991000CD253 /* EventTableViewCell.swift */,
 				849701A9207DBCAA003D46A1 /* EventDetailTableViewCell.swift */,
 				84B0808120D98DA50035E435 /* GalleryTableViewCell.swift */,
@@ -226,6 +235,7 @@
 		84DD413C207289AA000CD253 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				840D0D0A20EE8BBF0076BD5A /* Contacts.swift */,
 				84DD413520715897000CD253 /* Events.swift */,
 				84DD413D20748CD0000CD253 /* Members.swift */,
 			);
@@ -305,6 +315,8 @@
 		84E991422066553B003920D8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				840D0D0620EC7CC10076BD5A /* logo2.png */,
+				840D0D0720EC7CC20076BD5A /* logoTitle.png */,
 				84DD4148207632A7000CD253 /* infoHeader.png */,
 				84DD412A20706DF7000CD253 /* RS.png */,
 				84DD412920706DF7000CD253 /* RS2.png */,
@@ -479,11 +491,13 @@
 				84E9915B206658FC003920D8 /* header.png in Resources */,
 				84E9915120665572003920D8 /* cellBG2.png in Resources */,
 				84E9914120665315003920D8 /* GoogleService-Info.plist in Resources */,
+				840D0D0820EC7CC20076BD5A /* logo2.png in Resources */,
 				84E9915520665572003920D8 /* navBar.png in Resources */,
 				84E9915620665572003920D8 /* cellBG3.png in Resources */,
 				84DE33FC2062A18F00BCF842 /* Assets.xcassets in Resources */,
 				84E9915420665572003920D8 /* logo.png in Resources */,
 				84DD411520704394000CD253 /* Twitter.plist in Resources */,
+				840D0D0920EC7CC20076BD5A /* logoTitle.png in Resources */,
 				84DE33F72062A18F00BCF842 /* Main.storyboard in Resources */,
 				84E9915220665572003920D8 /* textFieldBG1.png in Resources */,
 				84E9914F20665572003920D8 /* title.png in Resources */,
@@ -676,6 +690,7 @@
 				84DD413A20728991000CD253 /* EventTableViewCell.swift in Sources */,
 				84DE33F42062A18F00BCF842 /* TwitterViewController.swift in Sources */,
 				849701AA207DBCAA003D46A1 /* EventDetailTableViewCell.swift in Sources */,
+				840D0D0B20EE8BBF0076BD5A /* Contacts.swift in Sources */,
 				84D5F55020D8B07C009B6172 /* GalleryTableViewController.swift in Sources */,
 				84DD414B207AF624000CD253 /* EventDetailViewController.swift in Sources */,
 				84DE33F22062A18F00BCF842 /* AppDelegate.swift in Sources */,
@@ -687,6 +702,7 @@
 				84B0808420D9C18B0035E435 /* AddressBookViewController.swift in Sources */,
 				84DD413620715897000CD253 /* Events.swift in Sources */,
 				84DE33FA2062A18F00BCF842 /* Regenerate_Society.xcdatamodeld in Sources */,
+				840D0D0D20EE91140076BD5A /* ContactTableViewCell.swift in Sources */,
 				84DD412720704C4F000CD253 /* HomeViewController.swift in Sources */,
 				84DD4142207522E0000CD253 /* TeamTableViewCell.swift in Sources */,
 				84679CD420A907840002D865 /* LaunchViewController.swift in Sources */,
@@ -863,6 +879,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				IBSC_OTHER_FLAGS = "";
 				INFOPLIST_FILE = "Regenerate Society/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HD2Technology.Regenerate-Society";

@@ -13,6 +13,9 @@ import AVFoundation
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var logoTitleView: UIImageView!
+    @IBOutlet weak var logo: UIImageView!
+    
     @IBOutlet weak var menuTableView: UITableView!
     @IBOutlet weak var twitterContainer: UIView!
     @IBOutlet weak var eventContainer: UIView!
@@ -29,9 +32,19 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        updateConstraints()
+        
+        UIView.animate(withDuration: 2, animations: {
+            self.logo.transform = CGAffineTransform.init(rotationAngle: CGFloat.pi)
+        })
+        
         mutableString = NSMutableAttributedString(string: titleLabel.text!, attributes: [NSAttributedStringKey.font:UIFont(name: "Duke", size: 36.0)!])
         mutableString.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor.white, range: NSRange(location:0,length:17))
         titleLabel.attributedText = mutableString
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(contactAccess))
+        tap.numberOfTapsRequired = 7
+        logoTitleView.addGestureRecognizer(tap)
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,6 +56,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         showHideMenuView()
     }
     
+    @objc func contactAccess() {
+        print("Test tap")
+        let addressBookViewController = self.storyboard?.instantiateViewController(withIdentifier: "AddressBookViewController") as! AddressBookViewController
+        self.navigationController?.pushViewController(addressBookViewController, animated: true)
+    }
+    
     func showHideMenuView() {
         if menuTableView.transform == .identity {
             UIView.animate(withDuration: 1, animations: {
@@ -50,6 +69,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 self.menuTableView.frame.size.height = self.twitterContainer.frame.size.height
                 self.menuTableView.frame.origin.y = self.twitterContainer.frame.origin.y
                 self.gradientView.isHidden = false
+                self.menuTableView.isHidden = false
             })
         } else {
             UIView.animate(withDuration: 1, animations: {
@@ -59,12 +79,25 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
+    func updateConstraints() {
+        let screenWidth = UIScreen.main.bounds.width
+        let screenHeight = UIScreen.main.bounds.height
+        print("Device sizes: \(screenWidth) x \(screenHeight)")
+        
+//        if (screenWidth == 768) && (screenHeight == 1024) {
+//            print("iPad Pro 9.7")
+//            logoTitleView.translatesAutoresizingMaskIntoConstraints = true
+//            logoTitleView.frame.size.height = logoTitleView.frame.size.height * 4
+//            logoTitleView.updateConstraints()
+//        }
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -75,12 +108,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         } else if (indexPath.row == 1) {
             cell = tableView.dequeueReusableCell(withIdentifier: "upcomingEventsIdentifier", for: indexPath)
         } else if (indexPath.row == 2) {
-            cell = tableView.dequeueReusableCell(withIdentifier: "volunteerCheckInIdentifier", for: indexPath)
-        } else if (indexPath.row == 3) {
             cell = tableView.dequeueReusableCell(withIdentifier: "meetTheTeamIdentifier", for: indexPath)
-        } else if (indexPath.row == 4) {
+        } else if (indexPath.row == 3) {
             cell = tableView.dequeueReusableCell(withIdentifier: "aboutRSIdentifier", for: indexPath)
-        } else if (indexPath.row == 5) {
+        } else if (indexPath.row == 4) {
             cell = tableView.dequeueReusableCell(withIdentifier: "contactRSrIdentifier", for: indexPath)
         }
         
@@ -114,12 +145,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             contactContainer.isHidden = true
             showHideMenuView()
         } else if (indexPath.row == 2) {
-            titleLabel.text = "VOLUNTEER CHECK-IN"
-            mutableString = NSMutableAttributedString(string: titleLabel.text!, attributes: [NSAttributedStringKey.font:UIFont(name: "Duke", size: 36.0)!])
-            mutableString.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor.white, range: NSRange(location:0,length:10))
-            titleLabel.attributedText = mutableString
-            showHideMenuView()
-        } else if (indexPath.row == 3) {
             titleLabel.text = "MEET THE TEAM"
             mutableString = NSMutableAttributedString(string: titleLabel.text!, attributes: [NSAttributedStringKey.font:UIFont(name: "Duke", size: 36.0)!])
             mutableString.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor.white, range: NSRange(location:0,length:9))
@@ -128,7 +153,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             eventContainer.isHidden = true
             teamContainer.isHidden = false
             showHideMenuView()
-        } else if (indexPath.row == 4) {
+        } else if (indexPath.row == 3) {
             titleLabel.text = "ABOUT RS"
             mutableString = NSMutableAttributedString(string: titleLabel.text!, attributes: [NSAttributedStringKey.font:UIFont(name: "Duke", size: 36.0)!])
             mutableString.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor.white, range: NSRange(location:0,length:6))
@@ -140,7 +165,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             aboutContainer.isHidden = false
             contactContainer.isHidden = true
             showHideMenuView()
-        } else if (indexPath.row == 5) {
+        } else if (indexPath.row == 4) {
             titleLabel.text = "CONTACT RS"
             mutableString = NSMutableAttributedString(string: titleLabel.text!, attributes: [NSAttributedStringKey.font:UIFont(name: "Duke", size: 36.0)!])
             mutableString.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor.white, range: NSRange(location:0,length:8))
