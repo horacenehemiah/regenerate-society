@@ -15,6 +15,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     @IBOutlet weak var logoTitleView: UIImageView!
     @IBOutlet weak var logo: UIImageView!
+    @IBOutlet weak var menuBtn: UIButton!
     
     @IBOutlet weak var menuTableView: UITableView!
     @IBOutlet weak var twitterContainer: UIView!
@@ -34,8 +35,21 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         updateConstraints()
         
+        menuBtn.layer.cornerRadius = 0.5 * menuBtn.bounds.size.width
+        
         UIView.animate(withDuration: 2, animations: {
             self.logo.transform = CGAffineTransform.init(rotationAngle: CGFloat.pi)
+            self.logo.transform = CGAffineTransform.init(scaleX: 1.25, y: 1.25)
+            
+            let pulseAnimation = CABasicAnimation(keyPath: #keyPath(CALayer.opacity))
+            pulseAnimation.duration = 1
+            pulseAnimation.fromValue = 0
+            pulseAnimation.toValue = 1
+            pulseAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+            pulseAnimation.autoreverses = true
+            pulseAnimation.repeatCount = .greatestFiniteMagnitude
+            self.menuBtn.layer.add(pulseAnimation, forKey: "animateOpacity")
+            
         })
         
         mutableString = NSMutableAttributedString(string: titleLabel.text!, attributes: [NSAttributedStringKey.font:UIFont(name: "Duke", size: 36.0)!])
@@ -97,7 +111,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 6
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -112,7 +126,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         } else if (indexPath.row == 3) {
             cell = tableView.dequeueReusableCell(withIdentifier: "aboutRSIdentifier", for: indexPath)
         } else if (indexPath.row == 4) {
-            cell = tableView.dequeueReusableCell(withIdentifier: "contactRSrIdentifier", for: indexPath)
+            cell = tableView.dequeueReusableCell(withIdentifier: "contactRSIdentifier", for: indexPath)
+        } else if (indexPath.row == 5) {
+            cell = tableView.dequeueReusableCell(withIdentifier: "donateIdentifier", for: indexPath)
         }
         
         return cell
@@ -177,6 +193,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             aboutContainer.isHidden = true
             contactContainer.isHidden = false
             showHideMenuView()
+        } else if (indexPath.row == 5) {
+            if let url = URL(string: "https://www.paypal.com/donate/?token=YAXxb2v9Z8LYFy2vAfrZC6PQKFki5hKix7AJS2oQv6PuIaoKNsWwqE9WdyWWZ3OgkTrVpW&country.x=US&locale.x=US") {
+                UIApplication.shared.open(url, options: [:])
+            }
         }
     }
     

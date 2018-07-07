@@ -200,7 +200,7 @@
                                             <outlet property="aboutMenuLabel" destination="wqH-mm-HN3" id="ZAA-ED-t0p"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="contactRSrIdentifier" id="LgO-nD-cSJ" customClass="MenuTableViewCell" customModule="Regenerate_Society" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="contactRSIdentifier" id="LgO-nD-cSJ" customClass="MenuTableViewCell" customModule="Regenerate_Society" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="348" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LgO-nD-cSJ" id="eIs-Iw-rcn">
@@ -232,6 +232,38 @@
                                             <outlet property="contactMenuLabel" destination="T0Q-6Z-K5d" id="6Hr-RP-sWc"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="donateIdentifier" id="PIe-tL-vyE" customClass="MenuTableViewCell" customModule="Regenerate_Society" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="428" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PIe-tL-vyE" id="cuO-zF-IXP">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellBG1.png" translatesAutoresizingMaskIntoConstraints="NO" id="bEr-gD-JEu">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DONATE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rt-Yq-Wav">
+                                                    <rect key="frame" x="153.5" y="9" width="69.5" height="61.5"/>
+                                                    <fontDescription key="fontDescription" name="Duke-Fill" family="Duke" pointSize="36"/>
+                                                    <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bEr-gD-JEu" firstAttribute="leading" secondItem="cuO-zF-IXP" secondAttribute="leading" id="I3e-dV-3Di"/>
+                                                <constraint firstItem="9rt-Yq-Wav" firstAttribute="top" secondItem="cuO-zF-IXP" secondAttribute="topMargin" constant="1" id="JhX-98-x6U"/>
+                                                <constraint firstItem="bEr-gD-JEu" firstAttribute="centerX" secondItem="9rt-Yq-Wav" secondAttribute="centerX" id="OeF-zw-AyB"/>
+                                                <constraint firstItem="bEr-gD-JEu" firstAttribute="top" secondItem="cuO-zF-IXP" secondAttribute="top" id="TpT-1L-Udh"/>
+                                                <constraint firstItem="bEr-gD-JEu" firstAttribute="centerY" secondItem="9rt-Yq-Wav" secondAttribute="centerY" id="U6V-1B-3W5"/>
+                                                <constraint firstAttribute="trailing" secondItem="bEr-gD-JEu" secondAttribute="trailing" id="kxA-Fc-lob"/>
+                                                <constraint firstItem="bEr-gD-JEu" firstAttribute="centerY" secondItem="cuO-zF-IXP" secondAttribute="centerY" id="rRe-sc-7rF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="contactMenuLabel" destination="9rt-Yq-Wav" id="mYW-Fs-9lE"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <sections/>
                                 <connections>
@@ -248,8 +280,9 @@
                                             <constraint firstAttribute="height" constant="118" id="hb6-Rp-TOW"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHK-Wr-y1i" userLabel="menuBtn">
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHK-Wr-y1i" userLabel="menuBtn">
                                         <rect key="frame" x="158" y="128" width="59" height="59"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="59" id="BiP-Mp-wrv"/>
                                         </constraints>
@@ -347,6 +380,7 @@
                         <outlet property="gradientView" destination="kuO-D2-zNQ" id="GaE-hQ-vJ5"/>
                         <outlet property="logo" destination="Uos-5c-iEc" id="jwG-mv-jJa"/>
                         <outlet property="logoTitleView" destination="7xo-Ar-NxO" id="HOd-uB-VRZ"/>
+                        <outlet property="menuBtn" destination="HHK-Wr-y1i" id="lQJ-1b-tat"/>
                         <outlet property="menuTableView" destination="6CR-3s-7Ab" id="I2p-mn-IAO"/>
                         <outlet property="teamContainer" destination="hxK-Xm-n5d" id="AN4-nv-vSx"/>
                         <outlet property="titleLabel" destination="cif-Gv-bbZ" id="LGM-dG-TvF"/>
@@ -1024,7 +1058,7 @@ etc.</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address Book" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="baW-LZ-kBs">
-                                        <rect key="frame" x="119" y="193" width="136" height="42"/>
+                                        <rect key="frame" x="119.5" y="193" width="135.5" height="42"/>
                                         <fontDescription key="fontDescription" name="Duke-Fill" family="Duke" pointSize="36"/>
                                         <color key="textColor" red="0.25490196079999999" green="1" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
