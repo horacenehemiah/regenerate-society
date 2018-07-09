@@ -73,6 +73,8 @@ class AddressBookViewController: UIViewController, UITableViewDelegate, UITableV
                 self.protectedView.resignFirstResponder()
             })
         }
+        
+        pswdTextField.resignFirstResponder()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

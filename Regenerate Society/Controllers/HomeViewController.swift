@@ -197,7 +197,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             contactContainer.isHidden = false
             showHideMenuView()
         } else if (indexPath.row == 5) {
-            if let url = URL(string: "https://www.paypal.com/donate/?token=YAXxb2v9Z8LYFy2vAfrZC6PQKFki5hKix7AJS2oQv6PuIaoKNsWwqE9WdyWWZ3OgkTrVpW&country.x=US&locale.x=US") {
+            if let url = URL(string: "https://www.paypal.com/donate/?token=FJrwYfs7OsBjb_O0mGBxH4jgPGfnMdCuLPTKtvVVlRJ-60ckgASDYGkXSOoJFGVSY2SQbW&country.x=US&locale.x=US") {
                 UIApplication.shared.open(url, options: [:])
             }
         }

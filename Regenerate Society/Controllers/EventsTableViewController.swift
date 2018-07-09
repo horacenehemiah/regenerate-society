@@ -36,7 +36,7 @@ class EventsTableViewController: UITableViewController {
                     if let eventDictionary = snap.value as? Dictionary<String, AnyObject> {
                         let key = snap.key
                         let event = Events(key: key, dictionary: eventDictionary)
-                        self.events.append(event)
+                        self.events.insert(event, at: 0)
                     }
                 }
             }

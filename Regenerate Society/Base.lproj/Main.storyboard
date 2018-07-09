@@ -803,12 +803,18 @@ etc.</string>
                             </label>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rsociety2017@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQr-Kj-dRr">
                                 <rect key="frame" x="89" y="387" width="197" height="21"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" link="YES" staticText="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://thisisrsociety.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ql-up-6sJ">
                                 <rect key="frame" x="87" y="358" width="200" height="21"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" link="YES" staticText="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <color key="textColor" red="0.25490196079999999" green="1" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1292,7 +1298,7 @@ etc.</string>
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7j-lc-hfe">
-                                                    <rect key="frame" x="161.5" y="15" width="52.5" height="50"/>
+                                                    <rect key="frame" x="162" y="15" width="52.5" height="50"/>
                                                     <fontDescription key="fontDescription" name="Duke-Fill" family="Duke" pointSize="36"/>
                                                     <color key="textColor" red="0.25490196079999999" green="1" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1326,7 +1332,7 @@ etc.</string>
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming Events" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeT-j3-f7w">
-                                                    <rect key="frame" x="103.5" y="15" width="168" height="50"/>
+                                                    <rect key="frame" x="104" y="15" width="168" height="50"/>
                                                     <fontDescription key="fontDescription" name="Duke-Fill" family="Duke" pointSize="36"/>
                                                     <color key="textColor" red="0.25490196079999999" green="1" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1360,7 +1366,7 @@ etc.</string>
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volunteer Check-In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rV0-qZ-jpZ">
-                                                    <rect key="frame" x="91.5" y="15" width="192" height="50"/>
+                                                    <rect key="frame" x="92" y="15" width="192" height="50"/>
                                                     <fontDescription key="fontDescription" name="Duke-Fill" family="Duke" pointSize="36"/>
                                                     <color key="textColor" red="0.25490196079999999" green="1" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1394,7 +1400,7 @@ etc.</string>
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meet The Team" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofu-ex-u2k">
-                                                    <rect key="frame" x="118.5" y="15" width="138" height="50"/>
+                                                    <rect key="frame" x="119" y="15" width="138" height="50"/>
                                                     <fontDescription key="fontDescription" name="Duke-Fill" family="Duke" pointSize="36"/>
                                                     <color key="textColor" red="0.25490196079999999" green="1" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1462,7 +1468,7 @@ etc.</string>
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppf-73-bcM">
-                                                    <rect key="frame" x="145" y="12" width="85.5" height="55.5"/>
+                                                    <rect key="frame" x="145.5" y="12" width="85.5" height="55.5"/>
                                                     <fontDescription key="fontDescription" name="Duke-Fill" family="Duke" pointSize="36"/>
                                                     <color key="textColor" red="0.25490196079999999" green="1" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1496,7 +1502,7 @@ etc.</string>
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eaq-ZN-z7b">
-                                                    <rect key="frame" x="133.5" y="12" width="108" height="55.5"/>
+                                                    <rect key="frame" x="134" y="12" width="108" height="55.5"/>
                                                     <fontDescription key="fontDescription" name="Duke-Fill" family="Duke" pointSize="36"/>
                                                     <color key="textColor" red="0.25490196079999999" green="1" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
