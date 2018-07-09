@@ -34,23 +34,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         
         updateConstraints()
-        
-        menuBtn.layer.cornerRadius = 0.5 * menuBtn.bounds.size.width
-        
-        UIView.animate(withDuration: 2, animations: {
-            self.logo.transform = CGAffineTransform.init(rotationAngle: CGFloat.pi)
-            self.logo.transform = CGAffineTransform.init(scaleX: 1.25, y: 1.25)
-            
-            let pulseAnimation = CABasicAnimation(keyPath: #keyPath(CALayer.opacity))
-            pulseAnimation.duration = 1
-            pulseAnimation.fromValue = 0
-            pulseAnimation.toValue = 1
-            pulseAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-            pulseAnimation.autoreverses = true
-            pulseAnimation.repeatCount = .greatestFiniteMagnitude
-            self.menuBtn.layer.add(pulseAnimation, forKey: "animateOpacity")
-            
-        })
+        menuAnimation()
         
         mutableString = NSMutableAttributedString(string: titleLabel.text!, attributes: [NSAttributedStringKey.font:UIFont(name: "Duke", size: 36.0)!])
         mutableString.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor.white, range: NSRange(location:0,length:17))
@@ -74,6 +58,25 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         print("Test tap")
         let addressBookViewController = self.storyboard?.instantiateViewController(withIdentifier: "AddressBookViewController") as! AddressBookViewController
         self.navigationController?.pushViewController(addressBookViewController, animated: true)
+    }
+    
+    func menuAnimation() {
+        menuBtn.layer.cornerRadius = 0.5 * menuBtn.bounds.size.width
+        
+        UIView.animate(withDuration: 2, animations: {
+            self.logo.transform = CGAffineTransform.init(rotationAngle: CGFloat.pi)
+            self.logo.transform = CGAffineTransform.init(scaleX: 1.25, y: 1.25)
+            
+            let pulseAnimation = CABasicAnimation(keyPath: #keyPath(CALayer.opacity))
+            pulseAnimation.duration = 1
+            pulseAnimation.fromValue = 0
+            pulseAnimation.toValue = 1
+            pulseAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+            pulseAnimation.autoreverses = true
+            pulseAnimation.repeatCount = .greatestFiniteMagnitude
+            self.menuBtn.layer.add(pulseAnimation, forKey: "animateOpacity")
+            
+        })
     }
     
     func showHideMenuView() {
