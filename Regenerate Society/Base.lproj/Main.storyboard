@@ -396,10 +396,14 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="YVr-kn-w2v" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="urX-iL-8yu">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="urX-iL-8yu">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FDQ-c6-I94">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="SHa-qa-K4F" kind="relationship" relationship="rootViewController" id="WsA-wt-wLv"/>
                     </connections>
@@ -801,50 +805,54 @@ etc.</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rsociety2017@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQr-Kj-dRr">
-                                <rect key="frame" x="89" y="387" width="197" height="21"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" link="YES" staticText="YES"/>
-                                </accessibility>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://thisisrsociety.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ql-up-6sJ">
-                                <rect key="frame" x="87" y="358" width="200" height="21"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" link="YES" staticText="YES"/>
-                                </accessibility>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                <color key="textColor" red="0.25490196079999999" green="1" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="rsociety2017@gmail.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4PN-f5-QaJ" userLabel="rsociety2017@gmail.com">
+                                <rect key="frame" x="89" y="380" width="197" height="28"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="afs-9y-wV2"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" textContentType="email"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="https://thisisrsociety.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AlC-FK-wJt" userLabel="https://thisisrsociety.com">
+                                <rect key="frame" x="87" y="352" width="201" height="28"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="QJl-sI-x8E"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" textContentType="url"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="iE8-Ku-Y1O" firstAttribute="centerX" secondItem="fXi-lg-WOL" secondAttribute="centerX" id="1lf-Ao-pS7"/>
-                            <constraint firstItem="5Ql-up-6sJ" firstAttribute="leading" secondItem="RZe-g1-wdO" secondAttribute="leading" constant="87" id="1qy-7X-Bkj"/>
                             <constraint firstItem="iE8-Ku-Y1O" firstAttribute="top" secondItem="aoZ-qE-jWN" secondAttribute="bottom" constant="8" id="8DZ-hO-RNJ"/>
                             <constraint firstItem="RZe-g1-wdO" firstAttribute="trailing" secondItem="aoZ-qE-jWN" secondAttribute="trailing" constant="16" id="8Nb-oS-nZN"/>
-                            <constraint firstItem="5Ql-up-6sJ" firstAttribute="centerX" secondItem="fXi-lg-WOL" secondAttribute="centerX" id="99f-Yv-Q78"/>
-                            <constraint firstItem="RZe-g1-wdO" firstAttribute="trailing" secondItem="JQr-Kj-dRr" secondAttribute="trailing" constant="89" id="ARJ-cM-CPd"/>
                             <constraint firstItem="aoZ-qE-jWN" firstAttribute="centerX" secondItem="fXi-lg-WOL" secondAttribute="centerX" id="Bae-k3-kNH"/>
                             <constraint firstItem="aoZ-qE-jWN" firstAttribute="top" secondItem="RZe-g1-wdO" secondAttribute="top" constant="20" id="FY2-Z5-WmQ"/>
-                            <constraint firstItem="JQr-Kj-dRr" firstAttribute="leading" secondItem="RZe-g1-wdO" secondAttribute="leading" constant="89" id="GJT-QE-1tG"/>
-                            <constraint firstItem="JQr-Kj-dRr" firstAttribute="top" secondItem="5Ql-up-6sJ" secondAttribute="bottom" constant="8" id="Gec-1T-4ZK"/>
+                            <constraint firstItem="4PN-f5-QaJ" firstAttribute="top" secondItem="AlC-FK-wJt" secondAttribute="bottom" id="IZD-MT-EFs"/>
                             <constraint firstItem="RZe-g1-wdO" firstAttribute="trailing" secondItem="iE8-Ku-Y1O" secondAttribute="trailing" constant="16" id="JbT-jX-8NP"/>
                             <constraint firstItem="iE8-Ku-Y1O" firstAttribute="leading" secondItem="RZe-g1-wdO" secondAttribute="leading" constant="16" id="PAC-8p-z0o"/>
+                            <constraint firstItem="RZe-g1-wdO" firstAttribute="bottom" secondItem="4PN-f5-QaJ" secondAttribute="bottom" constant="20" id="V9C-Qi-flq"/>
+                            <constraint firstItem="4PN-f5-QaJ" firstAttribute="leading" secondItem="RZe-g1-wdO" secondAttribute="leading" constant="89" id="WrF-5R-ZOz"/>
+                            <constraint firstItem="AlC-FK-wJt" firstAttribute="leading" secondItem="RZe-g1-wdO" secondAttribute="leading" constant="87" id="anx-IV-jlb"/>
                             <constraint firstItem="aoZ-qE-jWN" firstAttribute="leading" secondItem="RZe-g1-wdO" secondAttribute="leading" constant="16" id="daQ-JJ-KAg"/>
-                            <constraint firstItem="RZe-g1-wdO" firstAttribute="bottom" secondItem="JQr-Kj-dRr" secondAttribute="bottom" constant="20" id="qwh-nB-C23"/>
-                            <constraint firstItem="RZe-g1-wdO" firstAttribute="trailing" secondItem="5Ql-up-6sJ" secondAttribute="trailing" constant="88" id="t3X-JT-8NL"/>
-                            <constraint firstItem="JQr-Kj-dRr" firstAttribute="centerX" secondItem="fXi-lg-WOL" secondAttribute="centerX" id="tAq-9u-Gej"/>
+                            <constraint firstItem="RZe-g1-wdO" firstAttribute="trailing" secondItem="4PN-f5-QaJ" secondAttribute="trailing" constant="89" id="jw7-PW-Cc9"/>
+                            <constraint firstItem="RZe-g1-wdO" firstAttribute="trailing" secondItem="AlC-FK-wJt" secondAttribute="trailing" constant="87" id="mUi-Gy-au4"/>
+                            <constraint firstItem="AlC-FK-wJt" firstAttribute="centerX" secondItem="fXi-lg-WOL" secondAttribute="centerX" id="p2O-CO-02L"/>
+                            <constraint firstItem="4PN-f5-QaJ" firstAttribute="centerX" secondItem="fXi-lg-WOL" secondAttribute="centerX" id="u6e-i3-rdS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RZe-g1-wdO"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TjH-CV-9XG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5945" y="112"/>
+            <point key="canvasLocation" x="5944.8000000000002" y="111.54422788605699"/>
         </scene>
         <!--Event Detail View Controller-->
         <scene sceneID="7a5-zf-ZDd">
@@ -1648,7 +1656,7 @@ etc.</string>
     <resources>
         <image name="backBtn.png" width="61" height="61"/>
         <image name="cellBG1.png" width="750" height="172"/>
-        <image name="infoHeader.png" width="605" height="150"/>
+        <image name="infoHeader.png" width="553" height="128"/>
         <image name="logo.png" width="568" height="338"/>
         <image name="logo2.png" width="122" height="122"/>
         <image name="logoTitle.png" width="568" height="200"/>

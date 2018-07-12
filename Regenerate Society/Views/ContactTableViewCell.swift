@@ -18,6 +18,8 @@ class ContactTableViewCell: UITableViewCell {
     @IBOutlet weak var address: UITextView!
 
     var contacts: Contacts!
+    var bod: BOD!
+    var volunteers: Volunteers!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -40,5 +42,26 @@ class ContactTableViewCell: UITableViewCell {
         website.text = contact.website
         address.text = contact.address
     }
-
+    
+    func configureCellTwo(_ bod: BOD) {
+        self.bod = bod
+        
+        name.text = bod.contactKey
+        organization.text = bod.organization
+        phoneNumber.text = bod.phone
+        email.text = bod.email
+        website.text = bod.website
+        address.text = bod.address
+    }
+    
+    func configureCellThree(_ volunteer: Volunteers) {
+        self.volunteers = volunteer
+        
+        name.text = volunteer.volunteerKey
+        organization.text = "College: \(volunteer.college) - Major: \(volunteer.major)"
+        phoneNumber.text = volunteer.phoneNumber
+        email.text = volunteer.email
+        website.text = "Career Interest: \(volunteer.careerInterest1)"
+        address.text = "Creative Interest: \(volunteer.creativeInterest1)"
+    }
 }

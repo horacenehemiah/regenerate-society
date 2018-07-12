@@ -12,12 +12,17 @@ import Firebase
 class TeamTableViewController: UITableViewController {
     
     var members = [Members]()
+    var firebaseOps = FirebaseOperations()
+    
+    var link = String()
+    var rsLink = String()
     let databaseReference = Database.database().reference()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         getListOfMembers()
+        firebaseOps.getRSLinks()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -73,27 +78,27 @@ class TeamTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if (indexPath.row == 0) {
-            if let url = URL(string: "https://thisisrsociety.com/wesley_wright/") {
+            if let url = URL(string: firebaseOps.ceoRSLink) {
                 UIApplication.shared.open(url, options: [:])
             }
         } else if (indexPath.row == 1) {
-            if let url = URL(string: "https://thisisrsociety.com/0-oj-montgomery/") {
+            if let url = URL(string: firebaseOps.cfoRSLink) {
                 UIApplication.shared.open(url, options: [:])
             }
         } else if (indexPath.row == 2) {
-            if let url = URL(string: "https://thisisrsociety.com/april-moton/") {
+            if let url = URL(string: firebaseOps.cocRSLink) {
                 UIApplication.shared.open(url, options: [:])
             }
         } else if (indexPath.row == 3) {
-            if let url = URL(string: "https://thisisrsociety.com/4-nehemiah-horace/") {
+            if let url = URL(string: firebaseOps.cooRSLink) {
                 UIApplication.shared.open(url, options: [:])
             }
         } else if (indexPath.row == 4) {
-            if let url = URL(string: "https://thisisrsociety.com/8-sheleka-laseter/") {
+            if let url = URL(string: firebaseOps.csRSLink) {
                 UIApplication.shared.open(url, options: [:])
             }
         } else if (indexPath.row == 5) {
-            if let url = URL(string: "https://thisisrsociety.com/briauna-perryman/") {
+            if let url = URL(string: firebaseOps.dmprRSLink) {
                 UIApplication.shared.open(url, options: [:])
             }
         }
@@ -111,19 +116,27 @@ class TeamTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let info = UITableViewRowAction(style: .normal, title: "ℹ︎") { (action, indexPath) in
             if (indexPath.row == 0) {
-                if let url = URL(string: "https://www.iamwescam.com") {
+                if let url = URL(string: self.firebaseOps.ceoWebsite) {
                     UIApplication.shared.open(url, options: [:])
                 }
             } else if (indexPath.row == 1) {
-                if let url = URL(string: "http://legendarykreations.com") {
+                if let url = URL(string: self.firebaseOps.cfoWebsite) {
+                    UIApplication.shared.open(url, options: [:])
+                }
+            }  else if (indexPath.row == 2) {
+                if let url = URL(string: self.firebaseOps.cocWebsite) {
                     UIApplication.shared.open(url, options: [:])
                 }
             } else if (indexPath.row == 3) {
-                if let url = URL(string: "https://hd2technology.com") {
+                if let url = URL(string: self.firebaseOps.cooWebsite) {
                     UIApplication.shared.open(url, options: [:])
                 }
             } else if (indexPath.row == 4) {
-                if let url = URL(string: "https://www.miyakostudios.com") {
+                if let url = URL(string: self.firebaseOps.csWebsite) {
+                    UIApplication.shared.open(url, options: [:])
+                }
+            }  else if (indexPath.row == 5) {
+                if let url = URL(string: self.firebaseOps.dmprWebsite) {
                     UIApplication.shared.open(url, options: [:])
                 }
             }
@@ -158,5 +171,4 @@ class TeamTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

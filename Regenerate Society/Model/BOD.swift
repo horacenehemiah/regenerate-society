@@ -1,14 +1,14 @@
-
-//  Contacts.swift
+//
+//  BOD.swift
 //  Regenerate Society
 //
-//  Created by Nehemiah Horace on 7/5/18.
+//  Created by Nehemiah Horace on 7/11/18.
 //  Copyright © 2018 HD2Technology LLC. All rights reserved.
 //
 
 import Foundation
 
-struct Contacts {
+struct BOD {
     
     fileprivate var _contactKey: String!
     fileprivate var _address: String!
@@ -46,7 +46,7 @@ struct Contacts {
         return _website
     }
     
-    // Initialize the new Contact
+    // Initialize the new BOD
     
     init(key: String, dictionary: Dictionary<String, AnyObject>) {
         self._contactKey = key

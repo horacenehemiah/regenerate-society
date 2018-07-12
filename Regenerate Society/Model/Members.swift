@@ -28,6 +28,7 @@ struct Members {
     fileprivate var _profileImage: String!
     fileprivate var _suffix: String!
     fileprivate var _title: String!
+    fileprivate var _website: String!
     
     var memberKey: String {
         return _memberKey
@@ -100,7 +101,11 @@ struct Members {
         return _title
     }
     
-    // Initialize the new Post
+    var website: String {
+        return _website
+    }
+    
+    // Initialize the new Member
     
     init(key: String, dictionary: Dictionary<String, AnyObject>) {
         self._memberKey = key
@@ -172,6 +177,10 @@ struct Members {
         
         if let title = dictionary["title"] as? String {
             self._title = title
+        }
+        
+        if let website = dictionary["website"] as? String {
+            self._website = website
         }
     }
 }

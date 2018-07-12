@@ -29,12 +29,19 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var titleLabel: UILabel!
     
     var mutableString = NSMutableAttributedString()
+    var paypalLink = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        updateConstraints()
         menuAnimation()
+        
+        let databaseReference = Database.database().reference()
+        databaseReference.child("Information").child("paypal").observeSingleEvent(of: DataEventType.value) {
+            (snapshot) in
+            self.paypalLink = snapshot.value as! String
+            print("PayPal Link: ", self.paypalLink)
+        }
         
         mutableString = NSMutableAttributedString(string: titleLabel.text!, attributes: [NSAttributedStringKey.font:UIFont(name: "Duke", size: 36.0)!])
         mutableString.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor.white, range: NSRange(location:0,length:17))
@@ -55,7 +62,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     @objc func contactAccess() {
-        print("Test tap")
         let addressBookViewController = self.storyboard?.instantiateViewController(withIdentifier: "AddressBookViewController") as! AddressBookViewController
         self.navigationController?.pushViewController(addressBookViewController, animated: true)
     }
@@ -94,19 +100,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 self.gradientView.isHidden = true
             })
         }
-    }
-    
-    func updateConstraints() {
-        let screenWidth = UIScreen.main.bounds.width
-        let screenHeight = UIScreen.main.bounds.height
-        print("Device sizes: \(screenWidth) x \(screenHeight)")
-        
-//        if (screenWidth == 768) && (screenHeight == 1024) {
-//            print("iPad Pro 9.7")
-//            logoTitleView.translatesAutoresizingMaskIntoConstraints = true
-//            logoTitleView.frame.size.height = logoTitleView.frame.size.height * 4
-//            logoTitleView.updateConstraints()
-//        }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -197,7 +190,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             contactContainer.isHidden = false
             showHideMenuView()
         } else if (indexPath.row == 5) {
-            if let url = URL(string: "https://www.paypal.me/regeneratesociety") {
+            if let url = URL(string: paypalLink) {
                 UIApplication.shared.open(url, options: [:])
             }
         }

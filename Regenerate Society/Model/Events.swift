@@ -21,7 +21,6 @@ struct Events {
     fileprivate var _location: String!
     fileprivate var _what: String!
     
-    
     var eventKey: String {
         return _eventKey
     }
@@ -62,9 +61,7 @@ struct Events {
         return _what
     }
     
-    
-    
-    // Initialize the new Post
+    // Initialize the new Event
     
     init(key: String, dictionary: Dictionary<String, AnyObject>) {
         self._eventKey = key
